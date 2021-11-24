@@ -43,11 +43,11 @@ var generateCalculator = {
         var btnDivision = document.createElement("BUTTON");
         btnDivision.innerHTML = "/";
         document.body.appendChild(btnDivision);
-        var btnC = document.createElemeent("BUTTON");
+        var btnC = document.createElement("BUTTON");
         btnC.innerHTML = "C";
         document.body.appendChild(btnC);
     }
 }
 
 
-generateButtons();
+generateCalculator.generateButtons();
