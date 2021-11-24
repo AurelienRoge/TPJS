@@ -43,6 +43,9 @@ function generateButtons(){
     var btnDivision = document.createElement("BUTTON");
     btnDivision.innerHTML = "/";
     document.body.appendChild(btnDivision);
+    var btnC = document.createElemeent("BUTTON");
+    btnC.innerHTML = "C";
+    document.body.appendChild(btnC);
 }
 
 generateButtons();
