@@ -1,4 +1,4 @@
-var generateCalculator ={
+var generateCalculator = {
     generateButtons : function(){
     
         var btn0 = document.createElement("BUTTON");
