@@ -1,23 +1,23 @@
-var FKeyPad = document.calcform;
+var keys = document.form;
 var Accumulate = 0;
 var NewNumber = false;
 var PendingOp = "";
 
 function NumPressed(Num) {
     if (NewNumber) {
-        FKeyPad.txt1.value = Num;
+        keys.txt1.value = Num;
         NewNumber = false;
     }
     else {
-        if (FKeyPad.txt1.value == "0")
-            FKeyPad.txt1.value = Num;
+        if (keys.txt1.value == "0")
+            keys.txt1.value = Num;
         else
-            FKeyPad.txt1.value += Num;
+            keys.txt1.value += Num;
     }
 }
 
 function Operation(Op) {
-    var txt1 = FKeyPad.txt1.value
+    var txt1 = keys.txt1.value
     if (NewNumber && PendingOp != "=");
     else {
         NewNumber = true;
@@ -31,13 +31,13 @@ function Operation(Op) {
             Accumulate *= parseFloat(txt1);
         else
             Accumulate = parseFloat(txt1);
-        FKeyPad.txt1.value = Accumulate;
+        keys.txt1.value = Accumulate;
         PendingOp = Op;
     }
 }
 
 function Decimal() {
-    var curtxt1 = FKeyPad.txt1.value;
+    var curtxt1 = keys.txt1.value;
     if (NewNumber) {
         curtxt1 = "0.";
         NewNumber = false;
@@ -46,20 +46,19 @@ function Decimal() {
         if (curtxt1.indexOf(".") == -1)
             curtxt1 += ".";
     }
-    FKeyPad.txt1.value = curtxt1;
+    keys.txt1.value = curtxt1;
 }
-
+// clear l'écran
 function ClearEntry() {
-    FKeyPad.txt1.value = "0";
+    keys.txt1.value = "0";
     NewNumber = true;
 } 
-
 function Clear() {
     Accumulate = 0;
     PendingOp = "";
     ClearEntry();
 }
 
-function Neg() {
-    FKeyPad.txt1.value = parseFloat(FKeyPad.txt1.value) * -1;
+function Neg() { //changer le signe d'un nombre
+    keys.txt1.value = parseFloat(keys.txt1.value) * -1;
 }
