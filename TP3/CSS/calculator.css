@@ -6,8 +6,8 @@
 
 .button {
     border: none;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     text-align: center;
     background-color:#3f2a56;
     color: white;
@@ -28,8 +28,8 @@
 
 
 .doubleSizeButton{
-    height: 100px;
-    width: 200px;
+    height: 90px;
+    width: 180px;
 }
 
 #btnequals{
@@ -37,8 +37,8 @@
 }
 
 #Affichage{
-    height:100px;
-    width: 398px;
+    height:90px;
+    width: 358px;
     border:none;
     font-size: 2cm;
     background-color: #ff5c39;
@@ -48,8 +48,8 @@
 }
 
 table{
-    width:400px;
-    height:600px;
+    width:360px;
+    height:540px;
     border: solid #261934 1px;
     border-spacing: 0px;
 }

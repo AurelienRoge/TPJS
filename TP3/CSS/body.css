@@ -8,6 +8,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
 }
 
 .JuniaCalculator{
@@ -30,8 +31,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    max-height: 800px;
 }
 
 FORM{
-    margin: 10% 0 0 0;
+    margin: 40px 0 10% 0;
 }
