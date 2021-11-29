@@ -1,16 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 .button {
     border: none;
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     text-align: center;
     background-color:#3f2a56;
     color: white;
-
+    border: solid #261934 1px;
     display: inline-block;
     font-size: 16px;
     margin: 0;
@@ -21,9 +22,14 @@
     background-color:#261934;
 }
 
+#btnequals:hover{
+    background-color: #993722;
+}
+
+
 .doubleSizeButton{
-    height: 80px;
-    width: 160px;
+    height: 100px;
+    width: 200px;
 }
 
 #btnequals{
@@ -31,26 +37,19 @@
 }
 
 #Affichage{
-    height:60px;
-    width: 320px;
+    height:100px;
+    width: 398px;
     border:none;
-}
-
-table{
-    width:60%;
-    height:60%;
-    border: solid 1px black;
-    border-spacing: 0px;
-}
-
-.start {
+    font-size: 2cm;
+    background-color: #ff5c39;
+    color:white;
+    border: solid #261934 1px;
     text-align: right;
 }
 
-.design {
-    position: absolute;
-    transform: translateX(-50%) translateY(-50%);
-    top: 50%;
-    left: 50%;
-
+table{
+    width:400px;
+    height:600px;
+    border: solid #261934 1px;
+    border-spacing: 0px;
 }
