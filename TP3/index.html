@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TP3 - Calculatrice</title>
+    <link rel="stylesheet" href="./CSS/calculator.css" />
+    <link rel="stylesheet" href="./CSS/body.css">
+    <link rel="stylesheet" href="./CSS/header_footer.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body class="design">
+    <header>
+        <a class="logo-container" href="">
+            <img src="https://www.junia.com/wp-content/uploads/2021/09/JUNIA-GEI-RVB-C@3x-300x138.png" class="logo"
+                alt="" loading="lazy"
+                srcset="https://www.junia.com/wp-content/uploads/2021/09/JUNIA-GEI-RVB-C@3x-300x138.png 300w, https://www.junia.com/wp-content/uploads/2021/09/JUNIA-GEI-RVB-C@3x-1024x472.png 1024w, https://www.junia.com/wp-content/uploads/2021/09/JUNIA-GEI-RVB-C@3x-768x354.png 768w, https://www.junia.com/wp-content/uploads/2021/09/JUNIA-GEI-RVB-C@3x-340x157.png 340w, https://www.junia.com/wp-content/uploads/2021/09/JUNIA-GEI-RVB-C@3x.png 1485w"
+                sizes="(max-width: 300px) 100vw, 300px" width="300" height="138">
+        </a>
+        <nav class="nav-container">
+            <div class="navlinks"><a href="" class="nav-link">Junia</a>
+            </div>
+            <div class="navlinks"><a href="" class="nav-link">Programmes</a>
+            </div>
+            <div class="navlinks"><a href="" class="nav-link">Prestations & conseil</a>
+            </div>
+            <div class="navlinks"><a href="" class="nav-link">Formations continues</a>
+            </div>
+            <div class="navlinks"><a href="" class="nav-link">Entreprises</a>
+            </div>
+            <div class="navlinks"><a href="" class="nav-link">Innovation & Recherche</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="Description">
+            <div class="JuniaCalculator"><strong>Junia Calculator</strong></div>
+            <h1 class="CalculatorDesc"> Nouvelle outil issu du fleuron de l'ingénierie Junia, cette calculatrice est
+                l'outil
+                idéal
+                pour calculer votre dette envers Junia, et même la recalculer en adéquation avec l'évolution des prix !
+            </h1>
+        </div>
+        <FORM name="form" action="">
+
+            <table>
+                <tr>
+                    <td colspan='4'>
+                        <input name="txt1" id="Affichage" type="Text" size=60 value="0" class="start" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input id="btnC" class="button button1" type="Button" value="  C " onclick="Clear()"></td>
+                    <td><input id="btnplusminus" class="button" type="Button" value=" +/- " onclick="Neg()"></td>
+                    <td><input id="btndecimal" class="button" type="Button" value="   .  " onclick="Decimal()"></td>
+                    <td><input id="btndivide" class="button" type="Button" value="   /   " onclick="Operation('/')">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input id="btn7" class="button" type="Button" value="  7  " onclick="NumPressed(7)"></td>
+                    <td><input id="btn8" class="button" type="Button" value="  8  " onclick="NumPressed(8)"></td>
+                    <td><input id="btn9" class="button" type="Button" value="  9  " onclick="NumPressed(9)"></td>
+
+                    <td><input id="btnplus" class="button" type="Button" value="  +  " onclick="Operation('+')"></td>
+                </tr>
+                <tr>
+                    <td><input id="btn4" class="button" type="Button" value="  4" onclick="NumPressed(4)"></td>
+                    <td><input id="btn5" class="button" type="Button" value="  5   " onclick="NumPressed(5)"></td>
+                    <td><input id="btn6" class="button" type="Button" value="  6  " onclick="NumPressed(6)"></td>
+                    <td><input id="btnminus" class="button" type="Button" value="   -   " onclick="Operation('-')"></td>
+                </tr>
+                <tr>
+                    <td><input id="btn1" class="button" type="Button" value="  1  " onclick="NumPressed(1)"></td>
+                    <td><input id="btn2" class="button" type="Button" value="  2  " onclick="NumPressed(2)"></td>
+                    <td><input id="btn3" class="button" type="Button" value="  3  " onclick="NumPressed(3)"></td>
+                    <td><input id="btnmultiply" class="button" type="Button" value="  *  " onclick="Operation('*')">
+                </tr>
+                <tr>
+
+                    <td colspan="2"><input id="btn0" class="button doubleSizeButton" type="Button" value="  0  "
+                            onclick="NumPressed(0)"></td>
+                    <td colspan="2"><input id="btnequals" class="button doubleSizeButton" type="Button" value="  =  "
+                            onclick="Operation('=')"></td>
+                </tr>
+            </table>
+
+        </FORM>
+    </div>
+    <script src="./JS/generateCalculator.js"></script>
+</body>
+
+</html>
