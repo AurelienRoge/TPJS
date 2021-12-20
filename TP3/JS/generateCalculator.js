@@ -1,7 +1,13 @@
+
+
 var keys = document.form;
 var Accumulate = 0;
 var NewNumber = false;
 var PendingOp = "";
+
+
+
+
 
 function NumPressed(Num) {
     if (NewNumber) {
@@ -16,6 +22,7 @@ function NumPressed(Num) {
     }
 }
 
+//on effectue les opérations
 function Operation(Op) {
     var txt1 = keys.txt1.value
     if (NewNumber && PendingOp != "=");
@@ -36,6 +43,7 @@ function Operation(Op) {
     }
 }
 
+//pour les nombres décimaux
 function Decimal() {
     var curtxt1 = keys.txt1.value;
     if (NewNumber) {
@@ -48,11 +56,12 @@ function Decimal() {
     }
     keys.txt1.value = curtxt1;
 }
+
 // clear l'écran
 function ClearEntry() {
     keys.txt1.value = "0";
     NewNumber = true;
-} 
+}
 function Clear() {
     Accumulate = 0;
     PendingOp = "";

@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="./JS/eventlistener.js"></script>
 </head>
 
 <body class="design">
@@ -59,42 +60,43 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><input id="btnC" class="button button1" type="Button" value="  C " onclick="Clear()"></td>
+                    <td><input data-key="8" id="btnC" class="button button1" type="Button" value="  C " onclick="Clear()"></td>
                     <td><input id="btnplusminus" class="button" type="Button" value=" +/- " onclick="Neg()"></td>
-                    <td><input id="btndecimal" class="button" type="Button" value="   .  " onclick="Decimal()"></td>
-                    <td><input id="btndivide" class="button" type="Button" value="   /   " onclick="Operation('/')">
+                    <td><input data-key="110" id="btndecimal" class="button" type="Button" value="   .  " onclick="Decimal()"></td>
+                    <td><input data-key="111" id="btndivide" class="button" type="Button" value="   /   " onclick="Operation('/')">
                     </td>
                 </tr>
                 <tr>
-                    <td><input id="btn7" class="button" type="Button" value="  7  " onclick="NumPressed(7)"></td>
-                    <td><input id="btn8" class="button" type="Button" value="  8  " onclick="NumPressed(8)"></td>
-                    <td><input id="btn9" class="button" type="Button" value="  9  " onclick="NumPressed(9)"></td>
+                    <td><input data-key="103" id="btn7" class="button" type="Button" value="  7  " onclick="NumPressed(7)"></td>
+                    <td><input data-key="104" id="btn8" class="button" type="Button" value="  8  " onclick="NumPressed(8)"></td>
+                    <td><input data-key="105" id="btn9" class="button" type="Button" value="  9  " onclick="NumPressed(9)"></td>
 
-                    <td><input id="btnplus" class="button" type="Button" value="  +  " onclick="Operation('+')"></td>
+                    <td><input data-key="107" id="btnplus" class="button" type="Button" value="  +  " onclick="Operation('+')"></td>
                 </tr>
                 <tr>
-                    <td><input id="btn4" class="button" type="Button" value="  4" onclick="NumPressed(4)"></td>
-                    <td><input id="btn5" class="button" type="Button" value="  5   " onclick="NumPressed(5)"></td>
-                    <td><input id="btn6" class="button" type="Button" value="  6  " onclick="NumPressed(6)"></td>
-                    <td><input id="btnminus" class="button" type="Button" value="   -   " onclick="Operation('-')"></td>
+                    <td><input data-key="100" id="btn4" class="button" type="Button" value="  4" onclick="NumPressed(4)"></td>
+                    <td><input data-key="101" id="btn5" class="button" type="Button" value="  5   " onclick="NumPressed(5)"></td>
+                    <td><input data-key="102" id="btn6" class="button" type="Button" value="  6  " onclick="NumPressed(6)"></td>
+                    <td><input data-key="109" id="btnminus" class="button" type="Button" value="   -   " onclick="Operation('-')"></td>
                 </tr>
                 <tr>
-                    <td><input id="btn1" class="button" type="Button" value="  1  " onclick="NumPressed(1)"></td>
-                    <td><input id="btn2" class="button" type="Button" value="  2  " onclick="NumPressed(2)"></td>
-                    <td><input id="btn3" class="button" type="Button" value="  3  " onclick="NumPressed(3)"></td>
-                    <td><input id="btnmultiply" class="button" type="Button" value="  *  " onclick="Operation('*')">
+                    <td><input data-key="97" id="btn1" class="button" type="Button" value="  1  " onclick="NumPressed(1)"></td>
+                    <td><input data-key="98" id="btn2" class="button" type="Button" value="  2  " onclick="NumPressed(2)"></td>
+                    <td><input data-key="99" id="btn3" class="button" type="Button" value="  3  " onclick="NumPressed(3)"></td>
+                    <td><input data-key="106" id="btnmultiply" class="button" type="Button" value="  *  " onclick="Operation('*')">
                 </tr>
                 <tr>
 
-                    <td colspan="2"><input id="btn0" class="button doubleSizeButton" type="Button" value="  0  "
+                    <td colspan="2"><input data-key="96" id="btn0" class="button doubleSizeButton" type="Button" value="  0  "
                             onclick="NumPressed(0)"></td>
-                    <td colspan="2"><input id="btnequals" class="button doubleSizeButton" type="Button" value="  =  "
+                    <td colspan="2"><input data-key="13" id="btnequals" class="button doubleSizeButton" type="Button" value="  =  "
                             onclick="Operation('=')"></td>
                 </tr>
             </table>
 
         </FORM>
     </div>
+    
     <script src="./JS/generateCalculator.js"></script>
 </body>
 
