@@ -83,10 +83,10 @@ class TicTacToeView extends TicTacToe {
             if (this.game.hasWinner()) {
                 endGameText.innerHTML += " et le gagnant est le joueur " + this.game.getWinner();
                 if (this.game.getCurrentPlayer() == 0) {
-                    endGameText.innerHTML += " (Joueur O)";
+                    endGameText.innerHTML += " (Joueur X)";
                 }
                 else {
-                    endGameText.innerHTML += " (Joueur X)";
+                    endGameText.innerHTML += " (Joueur O)";
                 }
                 console.log("Winner is player " + this.game.getWinner());
             }
