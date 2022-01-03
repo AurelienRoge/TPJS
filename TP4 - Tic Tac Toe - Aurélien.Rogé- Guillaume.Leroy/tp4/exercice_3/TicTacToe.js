@@ -82,6 +82,7 @@ TicTacToe.prototype.isFinished = function () {
             }
         }
     }
+    this.winner = undefined;
     this.finished = true;
     return this.finished;
 }

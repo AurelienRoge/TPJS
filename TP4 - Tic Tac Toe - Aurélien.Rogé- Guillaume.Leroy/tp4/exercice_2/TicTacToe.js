@@ -17,11 +17,14 @@ class TicTacToe extends Observable {
 TicTacToe.prototype.play = function (x, y) {
     if (this.grid[x][y] == undefined) {
         this.grid[x][y] = this.currentPlayer;
-    }
-    if (this.currentPlayer == 0) {
+    
+        if (this.currentPlayer == 0) {
         this.currentPlayer = 1;
+        }
+        else { 
+            this.currentPlayer = 0; 
+        }
     }
-    else { this.currentPlayer = 0; }
 }
 
 TicTacToe.prototype.reset = function () {
@@ -79,6 +82,7 @@ TicTacToe.prototype.isFinished = function () {
             }
         }
     }
+    this.winner = undefined;
     this.finished = true;
     return this.finished;
 }
